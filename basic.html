@@ -58,10 +58,94 @@
             src="https://ssl.pstatic.net/melona/libs/1495/1495662/1c5eff89a8bf45a3368f_20240513160523197.jpg"
             alt="이미지 설명"
         /><!-- http로 시작. 절대경로 - 어디서든 서버에 접속해서 가져올 수 있다  -->
-        <!-- ./ 현재위치 -->
-        <!-- ../ 상위 위치 -->
+        <!-- ./ 현재위치(로컬) -->
+        <!-- ../ 상위위치(로컬)  -->
         <hr />
         <br /><img src="./images/img1.jpg" alt="phone" />
+
+        <!-- (서버경로) -->
+        <!-- 앞에 http://www.github.com/닉네임/올릴 폴더/ 생략 되어있음 http://www.github.com/images/img.jpg -->
+        <img src="/images/img1.jpg" alt="" />
+        <!-- 깃에 올릴 때 위에처럼 올리면 경로가 달라짐.  -->
+        <!-- 서버에서 올리는 상대경로와 로컬에서의 상대경로가 다르다. 앞에 ./을 넣어줘야 함. ./없이 할려면 일일히 경로 찾아줘서 넣어주면 됨.-->
+
         <!-- h1~h6 는 크기를 위해서가 아니고 색인화 하기 위해 사용. 중요도-->
+
+        <!-- 테이블 태그 -->
+        <table border="1">
+            <!-- 요즘 테이블 넣기 -->
+            <caption>
+                테이블 제목(주식의 등락인지 등등...)
+            </caption>
+            <!-- 열 그룹 -->
+            <colgroup>
+                <col style="width: 50%" />
+                <col span="2" />
+                <!-- 뒤에있는 행(col)까지 먹음-->
+            </colgroup>
+            <!-- 테이블 머릿글 -->
+            <thead>
+                <!-- 행 -->
+                <tr>
+                    <!-- 열 -->
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <!-- 테이블 몸체 -->
+            <tbody>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+            </tbody>
+            <!-- 테이블 바닥글 -->
+            <tfoot>
+                <!-- 총 합계 같은 내용이 들어감 -->
+                <tr>
+                    <td>Sum</td>
+                    <td>100</td>
+                    <td>200</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- 목록 태그 | 엄청 많이 쓰인다. -->
+
+        <!-- 순서가 없는 목록 -->
+        <ul>
+            <li>ㅎㅎ</li>
+            <li>ㅋㅋ</li>
+            <li>ㅇㅇ</li>
+        </ul>
+        <ol>
+            <li>호호</li>
+            <li>코코</li>
+            <li>오오</li>
+        </ol>
+
+        <!-- 정의 목록 -->
+        <dl>
+            <dt>제목</dt>
+            <dd>설명</dd>
+            <dt>제목</dt>
+            <dd>설명</dd>
+        </dl>
+        <dl>
+            <dt>제목</dt>
+            <dd>설명</dd>
+        </dl>
+        <dl>
+            <dt>제목</dt>
+            <dd>설명</dd>
+        </dl>
+        <!-- ul-li는 하나로 감싸야 함 -->
+        <!-- dl-dt-dd는 나눠서 사용 가능. -->
     </body>
 </html>
