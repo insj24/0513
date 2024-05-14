@@ -42,6 +42,19 @@
 
     <!-- 페이지 본문 -->
     <body>
+        <!-- 이미지 분기대응 -->
+        <!-- 우리는 PC가 기본 / 미국은 모바일이 기본 -->
+        <picture>
+            <!-- media는 모바일, PC 같은 기기 -->
+            <!-- 600px 이하 -->
+            <source media="(max-width: 600px)" srcset="./images/img_smallflower.jpg" />
+            <!-- (600px 이상) 1500px 이하 -->
+            <source media="(max-width: 1500px)" srcset="./images/img_flowers.jpg" />
+            <!-- 1500px 이상 -->
+            <source srcset="./images/flowers.jpg" />
+            <img src="./images/img_smallflower.jpg" alt="#" />
+        </picture>
+
         <!-- layout 태그 -> HTML5부터 도입됨 -->
         <!-- .wrap / #wrap -->
         <div class="wrap">
