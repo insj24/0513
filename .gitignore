@@ -1,0 +1,8 @@
+# 파일 무시
+/Ds_store
+
+# 폴더 무시
+/img/Ds_store
+
+# 확장자 무시
+*.txt
