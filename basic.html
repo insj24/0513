@@ -42,6 +42,42 @@
 
     <!-- 페이지 본문 -->
     <body>
+        <!-- input tag -->
+        <form action="">
+            <!-- text -->
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" autocomplete="on" />
+        </form>
+        <br />
+
+        <form action="">
+            <!-- radio -->
+            <input type="radio" name="color" id="red" />
+            <label for="red">빨강</label>
+            <input type="radio" name="color" id="blue" />
+            <label for="blue">파랑</label>
+            <input type="radio" name="color" id="yellow" />
+            <label for="yellow">노랑</label>
+        </form>
+        <br />
+
+        <form action="">
+            <!-- checkbox -->
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree">동의합니다.</label>
+        </form>
+
+        <!-- selectbox -->
+        <label for="fruit">선호 과일</label>
+        <select name="fruit" id="fruit">
+            <option value="apple">apple</option>
+            <option value="melon">melon</option>
+        </select>
+
+        <!-- submit -->
+        <input type="submit" value="전송" />
+        <!-- button -->
+
         <!-- 이미지 분기대응 -->
         <!-- 우리는 PC가 기본 / 미국은 모바일이 기본 -->
         <picture>
@@ -51,7 +87,7 @@
             <!-- (600px 이상) 1500px 이하 -->
             <source media="(max-width: 1500px)" srcset="./images/img_flowers.jpg" />
             <!-- 1500px 이상 -->
-            <source srcset="./images/flowers.jpg" />
+            <source media="" srcset="./images/flowers.jpg" />
             <img src="./images/img_smallflower.jpg" alt="#" />
         </picture>
 
